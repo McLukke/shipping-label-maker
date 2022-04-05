@@ -26,10 +26,10 @@ This simple app collects shipping information from the user over a series of ste
 - [x] install Ant Design
 - [x] create page layout: Header, Progress bar, wizard content
 - [ ] create App state to hold form data
-  - [ ] create state for current step
-  - [ ] create error state for Progress bar
+  - [x] create state for current step
+  - [x] create error state for Progress bar
   - [ ] create handler to update app state for children
-  - [ ] create reset state handler
+  - [x] create reset state handler
   - [ ] fetch list of US address info on load
 - [ ] create Header Component
 - [ ] create Progress Component

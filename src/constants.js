@@ -17,6 +17,7 @@ export const INIT_APP_STATE = {
   to: address,
   weight: 0,
   shippingOption: 1,
+  hasError: false,
 };
 
 export const TOTAL_STEPS = [
