@@ -30,7 +30,7 @@ This simple app collects shipping information from the user over a series of ste
   - [x] create error state for Progress bar
   - [ ] create handler to update app state for children
   - [x] create reset state handler
-  - [ ] fetch list of US address info on load
+  - [x] fetch list of US address info on load
 - [ ] create Header Component
 - [ ] create Progress Component
   - [ ] accept error prop from parent
