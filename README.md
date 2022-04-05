@@ -24,7 +24,7 @@ This simple app collects shipping information from the user over a series of ste
 
 - [x] clean App component
 - [x] install Ant Design
-- [ ] create page layout: Header, Progress bar, wizard content
+- [x] create page layout: Header, Progress bar, wizard content
 - [ ] create App state to hold form data
   - [ ] create state for current step
   - [ ] create error state for Progress bar
