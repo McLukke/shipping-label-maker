@@ -2,33 +2,12 @@ import React from "react";
 import PageHeader from "antd/lib/page-header";
 import Steps from "antd/lib/steps";
 
+import { TOTAL_STEPS, INIT_APP_STATE as initState } from "./constants";
 import styles from "./App.module.css";
-
-const totalSteps = [
-  {
-    title: "Sender's Address",
-    content: "collect sender address",
-  },
-  {
-    title: "Receiver's Address",
-    content: "collect receiver address",
-  },
-  {
-    title: "Package Weight",
-    content: "get package weight",
-  },
-  {
-    title: "Shipping Option",
-    content: "get shipping option",
-  },
-  {
-    title: "Review and Confirm",
-    content: "review and confirm",
-  },
-];
 
 const App = () => {
   const [currentStep, setCurrentStep] = React.useState(0);
+  const [shippingLabel, setShippingLabel] = React.useState({ ...initState });
 
   return (
     <div className={styles.base}>
@@ -36,7 +15,7 @@ const App = () => {
 
       <div className={styles.content}>
         <Steps current={currentStep}>
-          {totalSteps.map((step) => (
+          {TOTAL_STEPS.map((step) => (
             <Steps.Step key={step.title} title={step.title} />
           ))}
         </Steps>
