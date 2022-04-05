@@ -28,18 +28,18 @@ This simple app collects shipping information from the user over a series of ste
 - [ ] create App state to hold form data
   - [x] create state for current step
   - [x] create error state for Progress bar
-  - [ ] create handler to update app state for children
+  - [x] create handler to update app state for children
   - [x] create reset state handler
   - [x] fetch list of US address info on load
-- [ ] create Header Component
-- [ ] create Progress Component
-  - [ ] accept error prop from parent
-  - [ ] bind error state to Progress component
-- [ ] Wizard Content
-  - [ ] Show loading vs process start
+- [x] create Header Component
+- [x] create Progress Component
+  - [x] accept error prop from parent
+  - [x] bind error state to Progress component
+- [x] Wizard Content
+  - [x] Show loading vs process start
 - [ ] create Step 1 Component
-  - [ ] accept US address info from parent
-  - [ ] create select for zip codes
+  - [x] accept US address info from parent
+  - [x] create select for zip codes
   - [ ] look up matching US city, auto fill
   - [ ] add free form text for shipper name
   - [ ] add free form text for address
