@@ -37,14 +37,14 @@ This simple app collects shipping information from the user over a series of ste
   - [x] bind error state to Progress component
 - [x] Wizard Content
   - [x] Show loading vs process start
-- [ ] create Step 1 Component
+- [x] create Step 1 Component
   - [x] accept US address info from parent
   - [x] create select for zip codes
-  - [ ] look up matching US city, auto fill
-  - [ ] add free form text for shipper name
-  - [ ] add free form text for address
-  - [ ] save inputs into parent state
-  - [ ] handle error on submit
+  - [x] look up matching US city, auto fill
+  - [x] add free form text for shipper name
+  - [x] add free form text for address
+  - [x] save inputs into parent state
+  - [x] handle error on submit
 - [ ] create Step 2 Component
   - [ ] reuse Step 1 component for Receiver
 - [ ] create Step 3 Component

@@ -3,18 +3,17 @@ export const SHIPPING_OPTION = {
   priority: 2,
 };
 
-const address = {
+const ADDRESS = {
   name: "",
-  streetNum: 0,
-  streetName: "",
+  address: "",
   city: "",
   state: "",
   zipCode: "",
 };
 
 export const INIT_APP_STATE = {
-  from: address,
-  to: address,
+  from: ADDRESS,
+  to: ADDRESS,
   weight: 0,
   shippingOption: 1,
   hasError: false,

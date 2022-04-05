@@ -78,7 +78,11 @@ const App = () => {
             </Steps>
 
             <div className={styles.wizard}>
-              <GetSenderAddress postalData={postalData.data} />
+              <GetSenderAddress
+                setShippingLabel={setShippingLabel}
+                setCurrentStep={setCurrentStep}
+                postalData={postalData.data}
+              />
             </div>
           </>
         )}
