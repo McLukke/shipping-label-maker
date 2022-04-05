@@ -1,5 +1,4 @@
 .base {
-  border: 1px solid red;
   width: inherit;
   height: inherit;
   display: flex;
@@ -14,6 +13,5 @@
 }
 
 .wizard {
-  border: 1px solid blue;
   flex: 1;
 }

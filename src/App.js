@@ -1,7 +1,6 @@
 import React from "react";
 import PageHeader from "antd/lib/page-header";
 import Steps from "antd/lib/steps";
-import Layout from "antd/lib/layout";
 
 import styles from "./App.module.css";
 
