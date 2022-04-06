@@ -25,7 +25,7 @@ This simple app collects shipping information from the user over a series of ste
 - [x] clean App component
 - [x] install Ant Design
 - [x] create page layout: Header, Progress bar, wizard content
-- [ ] create App state to hold form data
+- [x] create App state to hold form data
   - [x] create state for current step
   - [x] create error state for Progress bar
   - [x] create handler to update app state for children
@@ -45,16 +45,16 @@ This simple app collects shipping information from the user over a series of ste
   - [x] add free form text for address
   - [x] save inputs into parent state
   - [x] handle error on submit
-- [ ] create Step 2 Component
-  - [ ] reuse Step 1 component for Receiver
-- [ ] create Step 3 Component
-  - [ ] create input field for package weight in kg
-  - [ ] save inputs into parent state
-  - [ ] handle error on submit
-- [ ] create Step 4 Component
-  - [ ] create input field for shipping option
-  - [ ] save inputs into parent state
-  - [ ] handle error on submit
+- [x] create Step 2 Component
+  - [x] reuse Step 1 component for Receiver
+- [x] create Step 3 Component
+  - [x] create input field for package weight in kg
+  - [x] save inputs into parent state
+  - [x] handle error on submit
+- [x] create Step 4 Component
+  - [x] create input field for shipping option
+  - [x] save inputs into parent state
+  - [x] handle error on submit
 - [ ] create Step 5 Component
   - [ ] accept app state from parent
   - [ ] calculate shipping cost

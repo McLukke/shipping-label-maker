@@ -6,6 +6,8 @@ import Typography from "antd/lib/typography";
 import Button from "antd/lib/button";
 import Space from "antd/lib/space";
 
+import { SHIPPING_OPTION } from "../common/utils/constants";
+
 const formLayout = {
   labelCol: { span: 8 },
   wrapperCol: { span: 16 },
@@ -39,8 +41,13 @@ const ShippingOption = ({ updateAppState, setCurrentStep, currentStep }) => {
             rules={[{ required: true }]}
           >
             <Select>
-              <Select.Option value={1}>Ground</Select.Option>
-              <Select.Option value={2}>Priority</Select.Option>
+              {Object.entries(SHIPPING_OPTION).map((entry) => (
+                <Select.Option key={entry[0]} value={entry[1]}>
+                  {`${entry[0].charAt(0).toUpperCase()}${entry[0]
+                    .toLowerCase()
+                    .slice(1)}`}
+                </Select.Option>
+              ))}
             </Select>
           </Form.Item>
 

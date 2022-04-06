@@ -12,12 +12,14 @@ import SenderAddress from "./views/sender-address";
 import ReceiverAddress from "./views/receiver-address";
 import PackageWeight from "./views/package-weight";
 import ShippingOption from "./views/shipping-option";
+import ReviewConfirm from "./views/review-confirm";
 
-const allWizardComponents = [
+const wizardComponents = [
   SenderAddress,
   ReceiverAddress,
   PackageWeight,
   ShippingOption,
+  ReviewConfirm,
 ];
 
 const App = () => {
@@ -69,7 +71,7 @@ const App = () => {
     setShippingLabel({ ...initState });
   };
 
-  const CompToDisplay = allWizardComponents[currentStep];
+  const CompToDisplay = wizardComponents[currentStep];
 
   const updateAppState = (newState) => {
     setShippingLabel({
@@ -92,7 +94,9 @@ const App = () => {
               status={shippingLabel.hasError ? "error" : "process"}
             >
               {TOTAL_STEPS.map((step) => (
-                <Steps.Step key={step.title} title={step.title} />
+                <Steps.Step key={step.title} title={step.title}>
+                  {step.content}
+                </Steps.Step>
               ))}
             </Steps>
 
@@ -102,6 +106,7 @@ const App = () => {
                 setCurrentStep={setCurrentStep}
                 postalData={postalData.data}
                 currentStep={currentStep}
+                resetAppState={resetAppState}
               />
             </div>
           </>

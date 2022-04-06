@@ -20,24 +20,9 @@ export const INIT_APP_STATE = {
 };
 
 export const TOTAL_STEPS = [
-  {
-    title: "Sender's Address",
-    content: "collect sender address",
-  },
-  {
-    title: "Receiver's Address",
-    content: "collect receiver address",
-  },
-  {
-    title: "Package Weight",
-    content: "get package weight",
-  },
-  {
-    title: "Shipping Option",
-    content: "get shipping option",
-  },
-  {
-    title: "Review and Confirm",
-    content: "review and confirm",
-  },
+  { title: "Sender's Address" },
+  { title: "Receiver's Address" },
+  { title: "Package Weight" },
+  { title: "Shipping Option" },
+  { title: "Review and Confirm" },
 ];
