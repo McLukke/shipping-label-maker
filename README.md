@@ -55,11 +55,11 @@ This simple app collects shipping information from the user over a series of ste
   - [x] create input field for shipping option
   - [x] save inputs into parent state
   - [x] handle error on submit
-- [ ] create Step 5 Component
-  - [ ] accept app state from parent
-  - [ ] calculate shipping cost
-  - [ ] display shipping details on page
-  - [ ] confirm button to reset app
+- [x] create Step 5 Component
+  - [x] accept app state from parent
+  - [x] calculate shipping cost
+  - [x] display shipping details on page
+  - [x] confirm button to reset app
 
 Bonus
 

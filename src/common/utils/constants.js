@@ -16,7 +16,6 @@ export const INIT_APP_STATE = {
   to: ADDRESS,
   weight: 0,
   shippingOption: 1,
-  hasError: false,
 };
 
 export const TOTAL_STEPS = [
@@ -26,3 +25,5 @@ export const TOTAL_STEPS = [
   { title: "Shipping Option" },
   { title: "Review and Confirm" },
 ];
+
+export const SHIPPING_RATE = 0.4;

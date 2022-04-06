@@ -43,9 +43,7 @@ const PackageWeight = ({ updateAppState, setCurrentStep, currentStep }) => {
 
           <Form.Item {...tailLayout}>
             <Space>
-              <Button onClick={goBack} htmlType="submit">
-                Back
-              </Button>
+              <Button onClick={goBack}>Back</Button>
               <Button type="primary" htmlType="submit">
                 Next
               </Button>

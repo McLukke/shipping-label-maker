@@ -89,10 +89,7 @@ const App = () => {
           <Spin />
         ) : (
           <>
-            <Steps
-              current={currentStep}
-              status={shippingLabel.hasError ? "error" : "process"}
-            >
+            <Steps current={currentStep}>
               {TOTAL_STEPS.map((step) => (
                 <Steps.Step key={step.title} title={step.title}>
                   {step.content}
@@ -107,6 +104,7 @@ const App = () => {
                 postalData={postalData.data}
                 currentStep={currentStep}
                 resetAppState={resetAppState}
+                shippingLabel={shippingLabel}
               />
             </div>
           </>
