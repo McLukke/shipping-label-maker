@@ -8,7 +8,17 @@ import {
   INIT_APP_STATE as initState,
 } from "./common/utils/constants";
 import styles from "./App.module.css";
-import GetSenderAddress from "./views/GetSenderAddress";
+import SenderAddress from "./views/sender-address";
+import ReceiverAddress from "./views/receiver-address";
+import PackageWeight from "./views/package-weight";
+import ShippingOption from "./views/shipping-option";
+
+const allWizardComponents = [
+  SenderAddress,
+  ReceiverAddress,
+  PackageWeight,
+  ShippingOption,
+];
 
 const App = () => {
   const [currentStep, setCurrentStep] = useState(0);
@@ -59,6 +69,15 @@ const App = () => {
     setShippingLabel({ ...initState });
   };
 
+  const CompToDisplay = allWizardComponents[currentStep];
+
+  const updateAppState = (newState) => {
+    setShippingLabel({
+      ...shippingLabel,
+      ...newState,
+    });
+  };
+
   return (
     <div className={styles.base}>
       <PageHeader title="Shipping Label Maker" />
@@ -78,10 +97,11 @@ const App = () => {
             </Steps>
 
             <div className={styles.wizard}>
-              <GetSenderAddress
-                setShippingLabel={setShippingLabel}
+              <CompToDisplay
+                updateAppState={updateAppState}
                 setCurrentStep={setCurrentStep}
                 postalData={postalData.data}
+                currentStep={currentStep}
               />
             </div>
           </>
