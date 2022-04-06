@@ -16,14 +16,19 @@ const tailLayout = {
   wrapperCol: { offset: 8, span: 16 },
 };
 
-const GetSenderAddress = ({ postalData, setShippingLabel, setCurrentStep }) => {
+const GetSenderAddress = ({
+  postalData,
+  updateAppState,
+  setCurrentStep,
+  currentStep,
+}) => {
   const [form] = Form.useForm();
 
   const handleSubmit = (values) => {
-    setShippingLabel({
+    updateAppState({
       from: values,
     });
-    setCurrentStep(1);
+    setCurrentStep(currentStep + 1);
   };
 
   const handleZipcodeSelect = (selectedZipcode) => {
@@ -61,7 +66,7 @@ const GetSenderAddress = ({ postalData, setShippingLabel, setCurrentStep }) => {
   return (
     <Row align="middle" justify="center">
       <Col span={24}>
-        <Typography.Title level={3}>Enter receiver's address:</Typography.Title>
+        <Typography.Title level={3}>Enter Sender's Address:</Typography.Title>
       </Col>
 
       <Col xs={24} sm={20} md={18} lg={16} xl={12}>
@@ -119,11 +124,7 @@ const GetSenderAddress = ({ postalData, setShippingLabel, setCurrentStep }) => {
           <Form.Item {...tailLayout}>
             <Space>
               <Button onClick={() => form.resetFields()}>Reset</Button>
-              <Button
-                type="primary"
-                //onClick={handleSubmit}
-                htmlType="submit"
-              >
+              <Button type="primary" htmlType="submit">
                 Next
               </Button>
             </Space>

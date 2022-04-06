@@ -11,7 +11,7 @@ This simple app collects shipping information from the user over a series of ste
 - Web app is to be responsive
 - The final shipping label is to be printed on the screen and not on paper
 - Although not mentioned, the shipping cost will also be displayed with the final shipping label
-- Package weight is only in kilograms (kg)
+- Package weight is only in grams (g)
 - There will be no use of Redux
 - The user will always start the shipping label process from Step 1
 - The user will need to restart the process from Step 1 should they decide to leave the app mid-form without completion
