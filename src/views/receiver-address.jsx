@@ -1,9 +1,9 @@
 import CaptureAddressForm from "../common/components/capture-address-form";
 
-const GetSenderAddress = (props) => {
+const GetReceiverAddress = (props) => {
   const title = "Enter Receiver's Address";
 
   return <CaptureAddressForm title={title} {...props} />;
 };
 
-export default GetSenderAddress;
+export default GetReceiverAddress;

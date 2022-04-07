@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Package Weight snapshots to match 1`] = `
+<div
+  className="ant-row ant-row-center ant-row-middle"
+  style={Object {}}
+>
+  <div
+    className="ant-col ant-col-24"
+    style={Object {}}
+  >
+    <h3
+      className="ant-typography"
+      onClick={null}
+      style={
+        Object {
+          "WebkitLineClamp": undefined,
+        }
+      }
+    >
+      Enter Package Weight (in grams):
+    </h3>
+  </div>
+  <div
+    className="ant-col ant-col-xs-24 ant-col-sm-20 ant-col-md-18 ant-col-lg-16 ant-col-xl-12"
+    style={Object {}}
+  >
+    <form
+      className="ant-form ant-form-horizontal"
+      id="package-weight"
+      onReset={[Function]}
+      onSubmit={[Function]}
+    >
+      <div
+        className="ant-row ant-form-item"
+        style={Object {}}
+      >
+        <div
+          className="ant-col ant-col-8 ant-form-item-label"
+          style={Object {}}
+        >
+          <label
+            className="ant-form-item-required"
+            htmlFor="package-weight_weight"
+            title="Package Weight (g)"
+          >
+            Package Weight (g)
+          </label>
+        </div>
+        <div
+          className="ant-col ant-col-16 ant-form-item-control"
+          style={Object {}}
+        >
+          <div
+            className="ant-form-item-control-input"
+          >
+            <div
+              className="ant-form-item-control-input-content"
+            >
+              <input
+                className="ant-input"
+                id="package-weight_weight"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ant-row ant-form-item"
+        style={Object {}}
+      >
+        <div
+          className="ant-col ant-col-16 ant-col-offset-8 ant-form-item-control"
+          style={Object {}}
+        >
+          <div
+            className="ant-form-item-control-input"
+          >
+            <div
+              className="ant-form-item-control-input-content"
+            >
+              <div
+                className="ant-space ant-space-horizontal ant-space-align-center"
+                style={Object {}}
+              >
+                <div
+                  className="ant-space-item"
+                  style={
+                    Object {
+                      "marginRight": 8,
+                    }
+                  }
+                >
+                  <button
+                    className="ant-btn ant-btn-default"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <span>
+                      Back
+                    </span>
+                  </button>
+                </div>
+                <div
+                  className="ant-space-item"
+                  style={Object {}}
+                >
+                  <button
+                    className="ant-btn ant-btn-primary"
+                    onClick={[Function]}
+                    type="submit"
+                  >
+                    <span>
+                      Next
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+`;
