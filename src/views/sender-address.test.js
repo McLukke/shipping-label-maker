@@ -1,8 +1,9 @@
-import GetSenderAddress from "./sender-address";
 import ShallowRenderer from "react-test-renderer/shallow";
 import renderer from "react-test-renderer";
 
-describe("Package Weight", () => {
+import GetSenderAddress from "./sender-address";
+
+describe("Enter Sender Address", () => {
   let props;
 
   beforeEach(() => {
@@ -48,7 +49,7 @@ describe("Package Weight", () => {
       ],
       updateAppState: jest.fn(),
       setCurrentStep: jest.fn(),
-      currentStep: 2,
+      currentStep: 0,
     };
   });
 

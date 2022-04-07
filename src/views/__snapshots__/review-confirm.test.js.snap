@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Review & Confirm snapshots to match 1`] = `
+<div
+  className="ant-row ant-row-center ant-row-middle"
+  style={Object {}}
+>
+  <div
+    className="ant-col ant-col-24"
+    style={Object {}}
+  >
+    <h3
+      className="ant-typography"
+      onClick={null}
+      style={
+        Object {
+          "WebkitLineClamp": undefined,
+        }
+      }
+    >
+      Review and Confirm:
+    </h3>
+  </div>
+  <div
+    className="ant-col ant-col-xs-24 ant-col-sm-20 ant-col-md-18 ant-col-lg-16 ant-col-xl-12"
+    style={Object {}}
+  >
+    <pre
+      className="code"
+    >
+      <code>
+        {
+    "from": {
+        "address": "111",
+        "city": "Holtsville",
+        "name": "111",
+        "state": "New York",
+        "zipCode": 501
+    },
+    "to": {
+        "address": "222",
+        "city": "Aguada",
+        "name": "222",
+        "state": "Puerto Rico",
+        "zipCode": 602
+    },
+    "ReviewConfirm": 2,
+    "weight": "333"
+}
+      </code>
+    </pre>
+    <h5
+      className="ant-typography"
+      onClick={null}
+      style={
+        Object {
+          "WebkitLineClamp": undefined,
+        }
+      }
+    >
+      Your total shipping cost is: 
+      $199.80
+    </h5>
+    <div
+      className="ant-space ant-space-horizontal ant-space-align-center"
+      style={Object {}}
+    >
+      <div
+        className="ant-space-item"
+        style={
+          Object {
+            "marginRight": 8,
+          }
+        }
+      >
+        <button
+          className="ant-btn ant-btn-default"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            Back
+          </span>
+        </button>
+      </div>
+      <div
+        className="ant-space-item"
+        style={Object {}}
+      >
+        <button
+          className="ant-btn ant-btn-primary"
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            Confirm
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

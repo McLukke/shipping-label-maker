@@ -1,15 +1,12 @@
-import { render, screen, act, waitFor } from "@testing-library/react";
+import { render, screen, act, waitFor, within } from "@testing-library/react";
 import ShallowRenderer from "react-test-renderer/shallow";
 import renderer from "react-test-renderer";
 import user from "@testing-library/user-event";
 
-import PackageWeight from "./package-weight";
+import ReviewConfirm from "./review-confirm";
 
-describe("Package Weight", () => {
+describe("Review & Confirm", () => {
   let props;
-  const getWeight = () => screen.getByRole("textbox", { name: /weight/i });
-  const clickNextButton = () =>
-    user.click(screen.getByRole("button", { name: /Next/i }));
 
   beforeEach(() => {
     Object.defineProperty(window, "matchMedia", {
@@ -27,39 +24,44 @@ describe("Package Weight", () => {
     });
 
     props = {
-      updateAppState: jest.fn(),
+      shippingLabel: {
+        from: {
+          address: "111",
+          city: "Holtsville",
+          name: "111",
+          state: "New York",
+          zipCode: 501,
+        },
+        to: {
+          address: "222",
+          city: "Aguada",
+          name: "222",
+          state: "Puerto Rico",
+          zipCode: 602,
+        },
+        ReviewConfirm: 2,
+        weight: "333",
+      },
+      resetAppState: jest.fn(),
       setCurrentStep: jest.fn(),
-      currentStep: 2,
+      currentStep: 4,
     };
 
-    render(<PackageWeight {...props} />);
+    render(<ReviewConfirm {...props} />);
   });
 
   it("renders without crashing", () => {
     const renderer = new ShallowRenderer();
-    renderer.render(<PackageWeight {...props} />);
+    renderer.render(<ReviewConfirm {...props} />);
     const view = renderer.getRenderOutput();
 
     expect(view).toBeTruthy();
   });
 
   it("snapshots to match", () => {
-    const component = renderer.create(<PackageWeight {...props} />);
+    const component = renderer.create(<ReviewConfirm {...props} />);
     const tree = component.toJSON();
 
     expect(tree).toMatchSnapshot();
-  });
-
-  it("submit is called", () => {
-    act(() => user.type(getWeight(), "123"));
-    clickNextButton();
-  });
-
-  it("has required input", async () => {
-    clickNextButton();
-
-    await waitFor(() => {
-      expect(getWeight()).toHaveClass("ant-input-status-error");
-    });
   });
 });
