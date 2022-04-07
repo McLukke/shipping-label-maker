@@ -63,6 +63,6 @@ This simple app collects shipping information from the user over a series of ste
 
 Bonus
 
-- [ ] add unit tests
+- [x] add unit tests
 - [ ] add logic to handle null fields
 - [ ] add logic to include free form text when user zip code doesn't exist in list
