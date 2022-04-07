@@ -64,4 +64,24 @@ describe("Review & Confirm", () => {
 
     expect(tree).toMatchSnapshot();
   });
+
+  it("displays shipping cost", () => {
+    expect(screen.getAllByRole("heading")[1]).toContainHTML("shipping cost");
+  });
+
+  it("back button returns", () => {
+    const backBtn = screen.getAllByRole("button")[0];
+
+    act(() => user.click(backBtn));
+
+    expect(props.setCurrentStep).toHaveBeenCalled();
+  });
+
+  it("confirm button resets", () => {
+    const confirmBtn = screen.getAllByRole("button")[1];
+
+    act(() => user.click(confirmBtn));
+
+    expect(props.resetAppState).toHaveBeenCalled();
+  });
 });
